@@ -24,11 +24,8 @@ This repository contains scripts and data for setting up a MongoDB instance usin
    ```bash
    ./dockerRun.sh divided
    ```
+**If running into premission issues try running above commands with sudo.**
 
 ### Additional Information
 
 - The MongoDB Docker container runs on port 2717. You can access it via `mongodb://localhost:2717/otx_db`.
-- Remember to stop the running Docker container when you're done:
-  ```bash
-  docker stop test_mongodb
-  ```
