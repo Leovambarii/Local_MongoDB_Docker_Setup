@@ -1,0 +1,74 @@
+[
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f1"},
+        "username": "tester123",
+        "email": "test123@gmail.com",
+        "password": "hashed_password_1",
+        "address": "ul. Spokojna 12, Kraków",
+        "phone_number": "+48123456780",
+        "orders": [
+            {
+                "order_date": {"$date": "2024-03-21T21:39:56.290Z"},
+                "status": "pending",
+                "total_cost": 2200,
+                "items": [
+                    {
+                        "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f5"},
+                        "quantity": 1,
+                        "buying_price": 2200
+                    }
+                ]
+            },
+            {
+                "order_date": {"$date": "2024-03-21T21:32:11.151Z"},
+                "status": "delivered",
+                "total_cost": 1600,
+                "items": [
+                    {
+                        "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f6"},
+                        "quantity": 2,
+                        "buying_price": 800
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f2"},
+        "username": "shop_lover",
+        "email": "asia87@gmail.com",
+        "password": "hashed_password_2",
+        "address": "ul. Lipowa 456, Warszawa",
+        "phone_number": "+48987654321",
+        "orders": [
+            {
+                "order_date": {"$date": "2024-03-20T21:45:11.200Z"},
+                "status": "delivered",
+                "total_cost": 800,
+                "items": [
+                    {
+                        "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f6"},
+                        "quantity": 1,
+                        "buying_price": 800
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f3"},
+        "username": "anna_kowa",
+        "email": "anna_kowalska@gmail.com",
+        "password": "hashed_password_3",
+        "address": "ul. Kwiatowa 7, Warszawa",
+        "phone_number": "+48600123456"
+    },
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f4"},
+        "username": "marek_nowak",
+        "email": "mnowak@gmail.com",
+        "password": "hashed_password_4",
+        "address": "ul. Leśna 10, Kraków",
+        "phone_number": "+48666987654"
+    }
+]

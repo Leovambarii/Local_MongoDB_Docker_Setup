@@ -1,0 +1,41 @@
+[
+    {
+        "_id":  {"$oid": "60abf42cf0bc2bde6aecd2f7"},
+        "order_date": {"$date": "2024-03-21T21:39:56.290Z"},
+        "status": "pending",
+        "total_cost": 2200,
+        "items": [
+            {
+                "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f5"},
+                "quantity": 1,
+                "buying_price": 2200
+            }
+        ]
+    },
+    {
+        "_id":  {"$oid": "60abf42cf0bc2bde6aecd2f8"},
+        "order_date": {"$date": "2024-03-21T21:32:11.151Z"},
+        "status": "delivered",
+        "total_cost": 1600,
+        "items": [
+            {
+                "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f6"},
+                "quantity": 2,
+                "buying_price": 800
+            }
+        ]
+    },
+    {
+        "_id":  {"$oid": "60abf42cf0bc2bde6aecd2f9"},
+        "order_date": {"$date": "2024-03-20T21:45:11.200Z"},
+        "status": "delivered",
+        "total_cost": 800,
+        "items": [
+            {
+                "product_id": {"$oid": "60abf42cf0bc2bde6aecd2f6"},
+                "quantity": 1,
+                "buying_price": 800
+            }
+        ]
+    }
+]

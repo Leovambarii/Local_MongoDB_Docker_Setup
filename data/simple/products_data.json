@@ -1,0 +1,26 @@
+[
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f5"},
+        "seller_id": {"$oid": "60abf42cf0bc2bde6aecd2f3"},
+        "name": "Laptop",
+        "description": "15-inch laptop with SSD and 16GB RAM",
+        "price": 2200,
+        "category": ["Electronics", "Gaming"],
+        "stock_quantity": 15,
+        "images": ["url_to_image1", "url_to_image2"],
+        "ratings": [4, 5, 4],
+        "reviews": ["Great laptop!", "Fast delivery."]
+    },
+    {
+        "_id": {"$oid": "60abf42cf0bc2bde6aecd2f6"},
+        "seller_id": {"$oid": "60abf42cf0bc2bde6aecd2f4"},
+        "name": "Smartphone",
+        "description": "Latest smartphone with high-res display",
+        "price": 800,
+        "category": ["Electronics"],
+        "stock_quantity": 30,
+        "images": ["url_to_image1"],
+        "ratings": [5, 4, 1],
+        "reviews": ["Great phone!", "No phone charger..."]
+    }
+]
