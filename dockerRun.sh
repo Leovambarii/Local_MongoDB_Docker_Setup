@@ -41,7 +41,6 @@ sleep 5
 
 echo
 
-
 echo "Seeding example data into database and starting interactive terminal..."
 if [ "$1" = "divided" ]; then
     docker exec -it $DOCKER_CONTAINER bash -c "
@@ -55,6 +54,17 @@ else
     mongoimport --db otx_db --collection products --type json --file /src/$DATA/products_data.json --jsonArray &&
     mongosh"
 fi
+
+echo
+echo "Exporting data from database before shutdown..."
+EXPORT_DIR="data/backup"
+mkdir -p $EXPORT_DIR
+docker exec -it $DOCKER_CONTAINER bash -c "
+mongoexport --db otx_db --collection users --out /src/$EXPORT_DIR/users_data_backup.json --jsonArray &&
+mongoexport --db otx_db --collection products --out /src/$EXPORT_DIR/products_data_backup.json --jsonArray &&
+if [ \"$1\" = \"divided\" ]; then
+    mongoexport --db otx_db --collection orders --out /src/$EXPORT_DIR/orders_data_backup.json --jsonArray
+fi"
 
 echo
 echo "Stopping the Docker container..."
